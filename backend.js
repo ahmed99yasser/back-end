@@ -10,8 +10,10 @@ const cors =require("cors")
 app.use(
   cors(
     {
+          //http://ahmed99yasser.github.io/front-end
+    //  origin:"http://localhost:3000"
+    origin:"http://ahmed99yasser.github.io/front-end"
 
-      origin:"http://localhost:3000"
       }
     
   )
@@ -145,7 +147,7 @@ const users=
 
 
 
-app.get("/",(req,res) =>
+app.get("",(req,res) =>
 {
 
   res.json(users)
@@ -163,4 +165,5 @@ console.log("the server is running on port : 8080")
 
 
 
-//?active=1
+//https://www.youtube.com/watch?v=PNtFSVU-YTI
+//solve cors orgine error in react
